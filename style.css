@@ -1,0 +1,26 @@
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f3f3f3;
+}
+h1 {
+  color: #333;
+}
+.controls {
+  margin-bottom: 10px;
+}
+button {
+  margin: 2px;
+  padding: 5px 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
