@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>Road Map AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧠 Road Map AI Assistant</h1>
+  <div class="controls">
+    <label>ผลจริง:</label>
+    <button onclick="setResult('P')">P</button>
+    <button onclick="setResult('B')">B</button>
+    <button onclick="setResult('T')">T</button>
+
+    <label>Big Eye:</label>
+    <button onclick="setEye('big','🔴')">🔴</button>
+    <button onclick="setEye('big','🔵')">🔵</button>
+
+    <label>Small:</label>
+    <button onclick="setEye('small','🔴')">🔴</button>
+    <button onclick="setEye('small','🔵')">🔵</button>
+
+    <label>Cockroach:</label>
+    <button onclick="setEye('cockroach','🔴')">🔴</button>
+    <button onclick="setEye('cockroach','🔵')">🔵</button>
+
+    <button onclick="addData()">เพิ่มข้อมูล</button>
+    <button onclick="resetData()">รีเซต</button>
+  </div>
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>ตา</th>
+        <th>ผลจริง</th>
+        <th>Big</th>
+        <th>Small</th>
+        <th>Cockroach</th>
+        <th>เค้าไพ่</th>
+        <th>Ask</th>
+        <th>แนะนำ</th>
+        <th>สถิติย้อนหลัง</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
